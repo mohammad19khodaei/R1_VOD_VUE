@@ -79,13 +79,26 @@
             {{ currentUser.username }}
           </router-link>
         </li>
+        <li class="nav-item" v-if="currentUser.charge">
+          <router-link
+            class="nav-link"
+            active-class="active"
+            exact
+            :to="{
+              name: 'factors',
+              params: { username: currentUser.username }
+            }"
+          >
+            <b>Charge: </b>{{ currentUser.charge }}
+          </router-link>
+        </li>
       </ul>
     </div>
   </nav>
 </template>
 
 <script>
-import { mapGetters } from "vuex";
+import {mapGetters} from "vuex";
 
 export default {
   name: "RwvHeader",

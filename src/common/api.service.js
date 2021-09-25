@@ -55,6 +55,12 @@ export const TagsService = {
   }
 };
 
+export const FactorsService = {
+  get() {
+    return ApiService.get("user", "factors");
+  }
+};
+
 export const ArticlesService = {
   query(type, params) {
     return ApiService.query("articles" + (type === "feed" ? "/feed" : ""), {
