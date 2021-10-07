@@ -39,7 +39,12 @@ export default new Router({
     {
       name: "settings",
       path: "/settings",
-      component: () => import("@/views/Settings")
+      component: () => import("@/views/Setting")
+    },
+    {
+      name: "information",
+      path: "/information",
+      component: () => import("@/views/Information")
     },
     // Handle child routes with a default, by giving the name to the
     // child.

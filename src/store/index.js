@@ -6,6 +6,7 @@ import auth from "./auth.module";
 import article from "./article.module";
 import profile from "./profile.module";
 import factor from "./factor.module";
+import setting from "./setting.module";
 
 Vue.use(Vuex);
 
@@ -15,6 +16,7 @@ export default new Vuex.Store({
     auth,
     article,
     profile,
-    factor
+    factor,
+    setting
   }
 });

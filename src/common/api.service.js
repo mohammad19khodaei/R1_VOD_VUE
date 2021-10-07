@@ -61,6 +61,12 @@ export const FactorsService = {
   }
 };
 
+export const SettingsService = {
+  get() {
+    return ApiService.get("settings");
+  }
+};
+
 export const ArticlesService = {
   query(type, params) {
     return ApiService.query("articles" + (type === "feed" ? "/feed" : ""), {

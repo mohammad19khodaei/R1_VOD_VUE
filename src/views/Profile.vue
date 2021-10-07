@@ -10,7 +10,7 @@
             <div v-if="isCurrentUser()">
               <router-link
                 class="btn btn-sm btn-outline-secondary action-btn"
-                :to="{ name: 'settings' }"
+                :to="{ name: 'information' }"
               >
                 <i class="ion-gear-a"></i> Edit Profile Settings
               </router-link>

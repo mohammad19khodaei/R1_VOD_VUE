@@ -3,7 +3,7 @@
     <div class="container page">
       <div class="row">
         <div class="col-md-6 offset-md-3 col-xs-12">
-          <h1 class="text-xs-center">Your Settings</h1>
+          <h1 class="text-xs-center">Your Information</h1>
           <form @submit.prevent="updateSettings()">
             <fieldset>
               <fieldset class="form-group">
@@ -47,7 +47,7 @@
                 />
               </fieldset>
               <button class="btn btn-lg btn-primary pull-xs-right">
-                Update Settings
+                Update Information
               </button>
             </fieldset>
           </form>

@@ -61,9 +61,9 @@
             class="nav-link"
             active-class="active"
             exact
-            :to="{ name: 'settings' }"
+            :to="{ name: 'information' }"
           >
-            <i class="ion-gear-a"></i>&nbsp;Settings
+            <i class="ion-person"></i> Profile
           </router-link>
         </li>
         <li class="nav-item" v-if="currentUser.username">
@@ -77,6 +77,16 @@
             }"
           >
             {{ currentUser.username }}
+          </router-link>
+        </li>
+        <li class="nav-item" v-if="currentUser.is_admin">
+          <router-link
+            class="nav-link"
+            active-class="active"
+            exact
+            :to="{ name: 'settings' }"
+          >
+            <i class="ion-gear-a"></i> Settings
           </router-link>
         </li>
         <li class="nav-item" v-if="currentUser.charge">
@@ -98,7 +108,7 @@
 </template>
 
 <script>
-import {mapGetters} from "vuex";
+import { mapGetters } from "vuex";
 
 export default {
   name: "RwvHeader",
