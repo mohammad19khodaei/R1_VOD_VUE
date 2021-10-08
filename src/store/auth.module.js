@@ -5,7 +5,8 @@ import {
   LOGOUT,
   REGISTER,
   CHECK_AUTH,
-  UPDATE_USER
+  UPDATE_USER,
+  CHARGE_ACCOUNT,
 } from "./actions.type";
 import { SET_AUTH, PURGE_AUTH, SET_ERROR } from "./mutations.type";
 
@@ -80,6 +81,12 @@ const actions = {
     }
 
     return ApiService.put("user", user).then(({ data }) => {
+      context.commit(SET_AUTH, data.user);
+      return data;
+    });
+  },
+  [CHARGE_ACCOUNT](context, payload) {
+    return ApiService.post("user/charge", payload).then(({ data }) => {
       context.commit(SET_AUTH, data.user);
       return data;
     });

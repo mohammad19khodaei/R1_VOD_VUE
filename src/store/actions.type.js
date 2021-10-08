@@ -23,3 +23,4 @@ export const UPDATE_USER = "updateUser";
 export const FETCH_FACTORS = "fetchFactors";
 export const FETCH_SETTINGS = "fetchSettings";
 export const UPDATE_SETTING = "updateSetting";
+export const CHARGE_ACCOUNT = "chargeAccount";

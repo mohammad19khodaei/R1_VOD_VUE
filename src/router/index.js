@@ -37,6 +37,11 @@ export default new Router({
       component: () => import("@/views/Register")
     },
     {
+      name: "factors",
+      path: "/factors",
+      component: () => import("@/views/Factors")
+    },
+    {
       name: "settings",
       path: "/settings",
       component: () => import("@/views/Setting")
@@ -62,11 +67,6 @@ export default new Router({
           name: "profile-favorites",
           path: "favorites",
           component: () => import("@/views/ProfileFavorited")
-        },
-        {
-          name: "factors",
-          path: "factors",
-          component: () => import("@/views/Factors")
         }
       ]
     },
