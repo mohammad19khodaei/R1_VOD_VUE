@@ -14,7 +14,7 @@
               />
             </fieldset>
             <button class="btn btn-lg btn-primary pull-xs-right">
-              Charge account
+              charge account
             </button>
           </form>
         </div>

@@ -89,7 +89,7 @@
             <i class="ion-gear-a"></i> Settings
           </router-link>
         </li>
-        <li class="nav-item" v-if="currentUser.charge">
+        <li class="nav-item" v-if="currentUser.balance">
           <router-link
             class="nav-link"
             active-class="active"
@@ -99,7 +99,7 @@
               params: { username: currentUser.username }
             }"
           >
-            <b>Charge: </b>{{ currentUser.charge }}
+            <b>Balance: </b>{{ currentUser.balance }}
           </router-link>
         </li>
       </ul>
